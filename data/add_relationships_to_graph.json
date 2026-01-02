@@ -1,26 +1,43 @@
-[
-  {
-    "from_label": "Company",
-    "from_props": {"name": "Acme Corp"},
-    "rel_type": "OPERATES_IN",
-    "to_label": "City",
-    "to_props": {"name": "New York"},
-    "rel_props": {"since_year": 2000}
-  },
-  {
-    "from_label": "Company",
-    "from_props": {"name": "Globex Inc"},
-    "rel_type": "OPERATES_IN",
-    "to_label": "City",
-    "to_props": {"name": "San Francisco"},
-    "rel_props": {"since_year": 2005}
-  },
-  {
-    "from_label": "Company",
-    "from_props": {"name": "Initech"},
-    "rel_type": "OPERATES_IN",
-    "to_label": "City",
-    "to_props": {"name": "Austin"},
-    "rel_props": {"since_year": 2010}
-  }
-]
+  [
+    {"from_label": "Company", "from_props": {"name": "Apple Inc."}, "rel_type": "OPERATES_IN", "to_label": "City", "to_props": {"name": "Cupertino"}, "rel_props": {"since_year": 1976}},
+    {"from_label": "Company", "from_props": {"name": "Apple Inc."}, "rel_type": "OPERATES_IN_INDUSTRY", "to_label": "Industry", "to_props": {"name": "Technology"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Microsoft Corporation"}, "rel_type": "OPERATES_IN", "to_label": "City", "to_props": {"name": "Redmond"}, "rel_props": {"since_year": 1975}},
+    {"from_label": "Company", "from_props": {"name": "Microsoft Corporation"}, "rel_type": "OPERATES_IN_INDUSTRY", "to_label": "Industry", "to_props": {"name": "Technology"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Amazon.com, Inc."}, "rel_type": "OPERATES_IN", "to_label": "City", "to_props": {"name": "Seattle"}, "rel_props": {"since_year": 1994}},
+    {"from_label": "Company", "from_props": {"name": "Amazon.com, Inc."}, "rel_type": "OPERATES_IN_INDUSTRY", "to_label": "Industry", "to_props": {"name": "E-commerce"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Alphabet Inc."}, "rel_type": "OPERATES_IN", "to_label": "City", "to_props": {"name": "Mountain View"}, "rel_props": {"since_year": 2015}},
+    {"from_label": "Company", "from_props": {"name": "Alphabet Inc."}, "rel_type": "OPERATES_IN_INDUSTRY", "to_label": "Industry", "to_props": {"name": "Technology"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Samsung Electronics"}, "rel_type": "OPERATES_IN", "to_label": "City", "to_props": {"name": "Seoul"}, "rel_props": {"since_year": 1969}},
+    {"from_label": "Company", "from_props": {"name": "Samsung Electronics"}, "rel_type": "OPERATES_IN_INDUSTRY", "to_label": "Industry", "to_props": {"name": "Electronics"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Toyota Motor Corporation"}, "rel_type": "OPERATES_IN", "to_label": "City", "to_props": {"name": "Toyota"}, "rel_props": {"since_year": 1937}},
+    {"from_label": "Company", "from_props": {"name": "Toyota Motor Corporation"}, "rel_type": "OPERATES_IN_INDUSTRY", "to_label": "Industry", "to_props": {"name": "Automotive"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Nestlé S.A."}, "rel_type": "OPERATES_IN", "to_label": "City", "to_props": {"name": "Vevey"}, "rel_props": {"since_year": 1866}},
+    {"from_label": "Company", "from_props": {"name": "Nestlé S.A."}, "rel_type": "OPERATES_IN_INDUSTRY", "to_label": "Industry", "to_props": {"name": "Food & Beverage"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Berkshire Hathaway"}, "rel_type": "OPERATES_IN_INDUSTRY", "to_label": "Industry", "to_props": {"name": "Conglomerate"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Berkshire Hathaway"}, "rel_type": "OWNS_COMPANY", "to_label": "Company", "to_props": {"name": "GEICO"}, "rel_props": {"ownership_percent": 100}},
+    {"from_label": "Company", "from_props": {"name": "GEICO"}, "rel_type": "IS_OWNED_BY", "to_label": "Company", "to_props": {"name": "Berkshire Hathaway"}, "rel_props": {"ownership_percent": 100}},
+    {"from_label": "Company", "from_props": {"name": "Apple Inc."}, "rel_type": "HAS_OFFICES_IN", "to_label": "City", "to_props": {"name": "New York"}, "rel_props": {"num_offices": 5}},
+    {"from_label": "Company", "from_props": {"name": "Microsoft Corporation"}, "rel_type": "HAS_OFFICES_IN", "to_label": "City", "to_props": {"name": "London"}, "rel_props": {"num_offices": 3}},
+    {"from_label": "Company", "from_props": {"name": "Amazon.com, Inc."}, "rel_type": "HAS_OFFICES_IN", "to_label": "City", "to_props": {"name": "Berlin"}, "rel_props": {"num_offices": 4}},
+    {"from_label": "Company", "from_props": {"name": "Alphabet Inc."}, "rel_type": "HAS_OFFICES_IN", "to_label": "City", "to_props": {"name": "Tokyo"}, "rel_props": {"num_offices": 2}},
+    {"from_label": "Company", "from_props": {"name": "Samsung Electronics"}, "rel_type": "HAS_OFFICES_IN", "to_label": "City", "to_props": {"name": "San Francisco"}, "rel_props": {"num_offices": 1}},
+    {"from_label": "Company", "from_props": {"name": "Toyota Motor Corporation"}, "rel_type": "HAS_OFFICES_IN", "to_label": "City", "to_props": {"name": "Toronto"}, "rel_props": {"num_offices": 2}},
+    {"from_label": "Company", "from_props": {"name": "Nestlé S.A."}, "rel_type": "HAS_OFFICES_IN", "to_label": "City", "to_props": {"name": "Mexico City"}, "rel_props": {"num_offices": 3}},
+    {"from_label": "Company", "from_props": {"name": "Apple Inc."}, "rel_type": "HQ_IN", "to_label": "City", "to_props": {"name": "Cupertino"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Microsoft Corporation"}, "rel_type": "HQ_IN", "to_label": "City", "to_props": {"name": "Redmond"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Amazon.com, Inc."}, "rel_type": "HQ_IN", "to_label": "City", "to_props": {"name": "Seattle"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Alphabet Inc."}, "rel_type": "HQ_IN", "to_label": "City", "to_props": {"name": "Mountain View"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Samsung Electronics"}, "rel_type": "HQ_IN", "to_label": "City", "to_props": {"name": "Seoul"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Toyota Motor Corporation"}, "rel_type": "HQ_IN", "to_label": "City", "to_props": {"name": "Toyota"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Nestlé S.A."}, "rel_type": "HQ_IN", "to_label": "City", "to_props": {"name": "Vevey"}, "rel_props": {}},
+    {"from_label": "Company", "from_props": {"name": "Apple Inc."}, "rel_type": "OWNS_FACILITY_IN", "to_label": "City", "to_props": {"name": "Austin"}, "rel_props": {"facility_type": "Data Center"}},
+    {"from_label": "Company", "from_props": {"name": "Microsoft Corporation"}, "rel_type": "OWNS_FACILITY_IN", "to_label": "City", "to_props": {"name": "Chicago"}, "rel_props": {"facility_type": "Research Lab"}},
+    {"from_label": "Company", "from_props": {"name": "Amazon.com, Inc."}, "rel_type": "OWNS_FACILITY_IN", "to_label": "City", "to_props": {"name": "Dallas"}, "rel_props": {"facility_type": "Fulfillment Center"}},
+    {"from_label": "Company", "from_props": {"name": "Alphabet Inc."}, "rel_type": "OWNS_FACILITY_IN", "to_label": "City", "to_props": {"name": "Pittsburgh"}, "rel_props": {"facility_type": "AI Lab"}},
+    {"from_label": "Company", "from_props": {"name": "Samsung Electronics"}, "rel_type": "OWNS_FACILITY_IN", "to_label": "City", "to_props": {"name": "Austin"}, "rel_props": {"facility_type": "Manufacturing Plant"}},
+    {"from_label": "Company", "from_props": {"name": "Toyota Motor Corporation"}, "rel_type": "OWNS_FACILITY_IN", "to_label": "City", "to_props": {"name": "Germantown"}, "rel_props": {"facility_type": "R&D Center"}},
+    {"from_label": "Company", "from_props": {"name": "Nestlé S.A."}, "rel_type": "OWNS_FACILITY_IN", "to_label": "City", "to_props": {"name": "Solon"}, "rel_props": {"facility_type": "Production Facility"}},
+    {"from_label": "Company", "from_props": {"name": "Berkshire Hathaway"}, "rel_type": "OWNS_COMPANY", "to_label": "Company", "to_props": {"name": "Dairy Queen"}, "rel_props": {"ownership_percent": 100}},
+    {"from_label": "Company", "from_props": {"name": "Berkshire Hathaway"}, "rel_type": "OWNS_COMPANY", "to_label": "Company", "to_props": {"name": "Duracell"}, "rel_props": {"ownership_percent": 100}}
+
+  ]

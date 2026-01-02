@@ -1,0 +1,12 @@
+{
+  "Company": [
+    {"name": "Acme Corp", "founded": 1995, "industry": "Manufacturing"},
+    {"name": "Globex Inc", "founded": 2001, "industry": "Technology"},
+    {"name": "Initech", "founded": 1999, "industry": "IT Services"}
+  ],
+  "City": [
+    {"name": "New York", "population": 8400000},
+    {"name": "San Francisco", "population": 870000},
+    {"name": "Austin", "population": 950000}
+  ]
+}

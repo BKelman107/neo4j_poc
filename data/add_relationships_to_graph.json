@@ -1,0 +1,26 @@
+[
+  {
+    "from_label": "Company",
+    "from_props": {"name": "Acme Corp"},
+    "rel_type": "OPERATES_IN",
+    "to_label": "City",
+    "to_props": {"name": "New York"},
+    "rel_props": {"since_year": 2000}
+  },
+  {
+    "from_label": "Company",
+    "from_props": {"name": "Globex Inc"},
+    "rel_type": "OPERATES_IN",
+    "to_label": "City",
+    "to_props": {"name": "San Francisco"},
+    "rel_props": {"since_year": 2005}
+  },
+  {
+    "from_label": "Company",
+    "from_props": {"name": "Initech"},
+    "rel_type": "OPERATES_IN",
+    "to_label": "City",
+    "to_props": {"name": "Austin"},
+    "rel_props": {"since_year": 2010}
+  }
+]

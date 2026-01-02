@@ -1,0 +1,57 @@
+{
+  "nodes": {
+    "Company": {
+      "properties": ["name", "founded", "revenue", "industry"],
+      "unique": ["name"]
+    },
+    "Country": {
+      "properties": ["name", "code"],
+      "unique": ["name"]
+    },
+    "City": {
+      "properties": ["name", "population"],
+      "unique": ["name"]
+    },
+    "Industry": {
+      "properties": ["name"],
+      "unique": ["name"]
+    }
+  },
+  "relationships": {
+    "OPERATES_IN": {
+      "from": "Company",
+      "to": "City",
+      "properties": ["since_year"]
+    },
+    "HAS_OFFICES_IN": {
+      "from": "Company",
+      "to": "City",
+      "properties": ["num_offices"]
+    },
+    "HQ_IN": {
+      "from": "Company",
+      "to": "City",
+      "properties": []
+    },
+    "OWNS_COMPANY": {
+      "from": "Company",
+      "to": "Company",
+      "properties": ["ownership_percent"]
+    },
+    "IS_OWNED_BY": {
+      "from": "Company",
+      "to": "Company",
+      "properties": ["ownership_percent"]
+    },
+    "OPERATES_IN_INDUSTRY": {
+      "from": "Company",
+      "to": "Industry",
+      "properties": []
+    },
+    "OWNS_FACILITY_IN": {
+      "from": "Company",
+      "to": "City",
+      "properties": ["facility_type"]
+    }
+  }
+}

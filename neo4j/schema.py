@@ -1,0 +1,15 @@
+CREATE CONSTRAINT company_name IF NOT EXISTS
+FOR (c:Company)
+REQUIRE c.name IS UNIQUE;
+
+CREATE CONSTRAINT country_name IF NOT EXISTS
+FOR (c:Country)
+REQUIRE c.name IS UNIQUE;
+
+CREATE CONSTRAINT city_name IF NOT EXISTS
+FOR (c:City)
+REQUIRE c.name IS UNIQUE;
+
+CREATE CONSTRAINT industry_name IF NOT EXISTS
+FOR (i:Industry)
+REQUIRE i.name IS UNIQUE;

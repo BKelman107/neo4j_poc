@@ -38,11 +38,6 @@
       "to": "Company",
       "properties": ["ownership_percent"]
     },
-    "IS_OWNED_BY": {
-      "from": "Company",
-      "to": "Company",
-      "properties": ["ownership_percent"]
-    },
     "OPERATES_IN_INDUSTRY": {
       "from": "Company",
       "to": "Industry",
@@ -52,6 +47,11 @@
       "from": "Company",
       "to": "City",
       "properties": ["facility_type"]
+    },
+    "IS_LOCATED_IN": {
+      "from": "City",
+      "to": "Country",
+      "properties": []
     }
   }
 }
